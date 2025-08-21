@@ -8,7 +8,7 @@ RUN rm /etc/nginx/conf.d/default.conf
 COPY nginx.conf /etc/nginx/conf.d/nginx.conf
 
 # Copy your JSON data file into the Nginx web root
-COPY data.json /usr/share/nginx/html/cidades.json
+COPY cidades.json /usr/share/nginx/html/cidades.json
 
 # Expose port 80 (Nginx's default HTTP port)
 EXPOSE 80
